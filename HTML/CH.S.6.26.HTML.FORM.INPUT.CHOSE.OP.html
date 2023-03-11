@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input From Choose Option</title>
+</head>
+<body>
+     <!-- in this option we can give drop down, radio and checkbox INPUT option  -->
+    <form>
+        <label for="First Name">First Name:</label>
+        <input id="First Name" type="text" name="firstName">
+
+        <br><br>
+
+        <label for="Last Name">Last Name:</label>
+        <input id="Last Name" type="text" name="lastName">
+        
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email">
+       
+        <!-- Inpute type to give Option Button  -->
+
+        <br><br>        
+        <label for="Location">State:</label>
+            <select id="location" name="location">
+                <!-- to give selected word in option menu -->
+                <option value="" selected>select state</option>
+                <option value="gujarat">GUJARAT</option>
+                <option value="maharastra">MAHARASTRA</option>
+                <option value="rajasthan">RAJASTHAN</option>
+                <option value="madhayapradesh">MP</option>
+            </select>
+        
+        <br><br>
+
+        <!-- Ratio Button In "Simple" Form in Inpute type  -->
+
+        <label for="Ocupation">OCUPATION:</label>
+                <label for="selfEmployee">selfemployee</label>
+                <input id="selfEmployee" type="radio" name="selfEmployee" value="OCUPATION1">
+                <label for="salary">salary:</label>
+                <input id="salary" type="radio" name="salary" value="OCUPATION2">
+                <label for="retire">retire:</label>
+                <input id="retire" type="radio" name="retire" value="OCUPATION3">
+        
+        <!-- Ratio Button In "FILDSET" Form in Inpute type  -->
+        
+        <!-- <fieldset>
+            <legend>OCUPATION</legend>
+                <label for="selfEmployee">selfemployee</label>
+                <input id="selfEmployee" type="radio" name="selfEmployee" value="OCUPATION1">
+                <label for="salary">salary:</label>
+                <input id="salary" type="radio" name="salary" value="OCUPATION2">
+                <label for="retire">retire:</label>
+                <input id="retire" type="radio" name="retire" value="OCUPATION3">
+        </fieldset> -->
+        
+        <br><br>
+
+        <!-- Check Box in "Simple" Form Inpute type  -->
+        <label for="yearlySalary">OCUPATION:</label>
+                <label for="below3lac">Below3LAC</label>
+                <input id="below3lac" type="checkbox" name="below3lac" value="income1">
+                <label for="above3">Above3lac</label>
+                <input id="above3" type="checkbox" name="above3" value="income2">
+                <label for="above5">Above5:</label>
+                <input id="above5" type="checkbox" name="above5" value="incom3">
+
+        <!-- Check Box in "FIELDSET" Form Inpute type  -->
+        <!-- <fieldset>
+            <legend>YEARLYINCOME</legend>
+                <label for="below3lac">Below3LAC</label>
+                <input id="below3lac" type="checkbox" name="below3lac" value="income1">
+                <label for="above3">Above3lac</label>
+                <input id="above3" type="checkbox" name="above3" value="income2">
+                <label for="above5">Above5:</label>
+                <input id="above5" type="checkbox" name="above5" value="incom3">
+        </fieldset> -->
+        
+        <br><br>
+        
+     <label for="contactNo">Contact No:</label>
+        <input id="contactNo" type="number" name="contactNo">
+
+        <br><br>
+        
+        <label for="textArea">Your Comment:</label>
+        <br>
+        <textarea id="textArea" ></textarea>
+        
+        <br><br>
+
+         <input type="submit" value="Submit">  <!--we also mention coloum and row number we want -->
+
+         <!-- have to check the section with youtube  -->
+    </form> 
+</body>
+</html>

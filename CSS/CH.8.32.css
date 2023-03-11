@@ -1,0 +1,40 @@
+/* every elements on web page is a box  */
+/* A web page is collection of BOX  */
+
+.box-z{
+    background-color: lightblue;
+    
+    /* box text set 30px from "Top" and "left"  */
+    padding: 30px;
+
+    /* border: 3px(thickness of border) solid(make border bold) black (give colour); */
+    border: 3px solid black;
+
+    /* Give magin to box from other box */
+    /* margin: ; give margin from all the side  */
+    /* margin-top: ;(margin from top),margin-bottom: ;: ;(margin from bottom),margin-right: ;(margin from right),margin left: ;(margin from left) */
+    
+    margin-bottom: 20px;
+
+    /* width: 100px; to set width of the box  */
+    width: 150px;
+    
+    /* height: 100px; to set height of the box  */
+
+    height: 250px;
+    /* if we don't give padding to other box, then same height and width give difference size of that box, because padding calculate after the area give to that box */
+    /* every box size = height+weight+pading+margin */
+
+    /* to give box exact size as box with out padding&margin  */
+    box-sizing: border-box;
+}
+.box-a{
+    background-color: lightgray;
+    width: 150px;
+    height: 250px;
+
+}
+.box-b{
+    background-color: orange;
+    
+}

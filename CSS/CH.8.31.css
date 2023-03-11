@@ -1,0 +1,38 @@
+/* In Case cade web browser have degault settings and we have to change it  */
+h1{
+    font-size: 165%;
+
+    /* To make font bold to normal in default header  */
+    font-weight: normal;
+}
+
+/* Desentic Selector */
+/* CSS alow to change structure of parents so that we dont have to change that aliments indivisualy */
+body{
+    color: green;
+}
+/* CSS inheritent: The inherit CSS keyword causes the element to take the computed value of the property from its parent element. It can be applied to any CSS property, including the CSS shorthand property all . For inherited properties, this reinforces the default behavior, and is only needed to override another rule. */
+
+/* Specific Selector */
+
+body .highlight{
+    color: orange;
+}
+/* specificity:  If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.*/
+/* "Desentic" selector is more specific then "type" selector */
+
+/* Class selector is more specific then Desentic and Type Selector */
+.highlight{
+    color: black;
+}
+/* If class name is same in body and footer then it will change colour in both area */
+
+/* Specific Class selector is more specific then Desentic and Type Selector */
+footer .highlight{
+    color: blue;
+}
+footer p{
+    color: red;
+}

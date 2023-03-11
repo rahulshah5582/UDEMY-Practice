@@ -1,0 +1,41 @@
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-area{
+   border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main-area {
+    width: 66%;
+    /* do this setting to make images or containet surrend the content */
+    float: left;
+}
+
+.side-bar {
+    width: 34%;
+    float: left;
+}
+
+/*  To fix both the side of box (Top & Bottom) */
+.fix{
+    clear: both;
+}
+
+/* we can use the class(group utility) in any where in our web page when we have containe parents with floating children, so that parents can clear the floting children by itself */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}

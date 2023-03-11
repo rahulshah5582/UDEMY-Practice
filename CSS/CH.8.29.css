@@ -1,0 +1,27 @@
+h1{
+    color:orange;
+    text-align: center;
+}
+
+header p{
+    color: green;
+}
+
+header p span{
+    color: blue;
+}
+
+.highlight{
+    background-color: yellow;
+}
+
+footer .highlight{
+    background-color: gray;
+}
+
+/* CSS Rule start with selector"h1" , Property= "colour", value= "orange"  */
+
+/* Their are three type of selector */
+    /* 1.Type Selector */
+    /* 2. Descendant Selector  */
+    /* 3. Class Selector  */

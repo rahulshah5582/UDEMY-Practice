@@ -1,0 +1,75 @@
+html{
+    background-color: #869960;
+}
+body{
+    font-family: cursive;
+    font-size: 87%;
+}
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #617140;
+}
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+header p{
+    margin: 0;
+}
+
+.content-area{
+   border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.side-bar {
+    width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+    /* padding: 20px 40px 20px 40px; its go clock wise (Top, right, bottom, left) */
+    padding: 20px 40px; /*its (top+bottom And right+left*/ 
+    box-sizing: border-box;
+    font-size: 75%;
+}
+footer{
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fix{
+    clear: both;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
