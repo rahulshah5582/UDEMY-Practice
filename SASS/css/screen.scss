@@ -1,0 +1,79 @@
+@import 'mixins';
+// To give mix colour mixin to web page
+// mixins is very good for media quareies
+
+// Feacher of SASS
+// 1. Variable EXP= colour veriabl
+// 2. Nesting 
+// 3.Inheritance/@extend 
+// 4.splitting up code into smaller file/@import 
+// 5.Mixins 
+// 6. Operators
+
+// To create colour veriable(this is the first fither of SASS)
+$beautifulHue: #059dec;
+
+html {
+	font-size: 1em;
+	@include bp-babyBear {
+		font-size: .8em;
+	}
+	@include bp-papaBear {
+		font-size: 1.4em;
+	}
+	line-height: 1.35;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	padding: 0 20px;
+	margin: 0;
+}
+// To give colour to our anchor element in our web page
+a {
+	color: $beautifulHue;
+}
+
+// To bring to header file data to this file
+@import 'header';
+
+.btn-a {
+	display: inline-block;
+	padding: 15px;
+	margin-right: 10px;
+	border: 1px solid $beautifulHue;
+	border-radius: 7px;
+	font-size: 80%;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn-b {
+	// @extend =To extend btn-a elements and change only new colour to btn-b
+	//  we can also use @extend and add in "ul" as "@extend.group" to give same effect as css group class
+	@extend .btn-a;
+	// lighten($beautifulHue, 30%)= give shade of perticuler colour
+	// @include verticalGradient(white, lighten($beautifulHue, 30%));= to give fadding one colour to another
+	@include verticalGradient(white, lighten($beautifulHue, 30%));
+}
+
+.box {
+	background-color: #DDD;
+	width: (300px * 2);
+	height: 150px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
